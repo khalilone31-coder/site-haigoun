@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAIGOUN — Énergie et Énergies Renouvelables | Djelfa, Algérie</title>
+<meta name="description" content="HAIGOUN conçoit, fabrique et distribue des onduleurs solaires, batteries de stockage LiFePO4, systèmes tout-en-un et éclairage solaire pour l'Algérie. Unité de production à Djelfa.">
+<link rel="icon" href="logo-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="logo-icon.png" alt="Logo HAIGOUN">
+      <span class="brand-text"><strong>HAIGOUN</strong><span>Énergie &amp; énergies renouvelables</span></span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta-mobile">Demander un devis</a>
+    </nav>
+    <a href="contact.html" class="nav-cta">Demander un devis</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow on-dark">Djelfa · Algérie — production &amp; distribution</p>
+      <h1>L'énergie du soleil,<br><em>maîtrisée</em> chez vous.</h1>
+      <p class="hero-lede">HAIGOUN conçoit des solutions solaires complètes — onduleurs hybrides, batteries LiFePO4, systèmes tout-en-one et éclairage autonome — pensées pour le climat et le réseau algériens.</p>
+      <div class="hero-actions">
+        <a href="catalogue.html" class="btn btn-primary">
+          Explorer le catalogue
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="contact.html" class="btn btn-ghost-light">Demander un devis</a>
+      </div>
+      <div class="hero-trust">
+        <div><strong>99,9%</strong><span>Rendement MPPT crête</span></div>
+        <div><strong>1,2 – 120 kW</strong><span>Gamme d'onduleurs</span></div>
+        <div><strong>6000+</strong><span>Cycles batterie LiFePO4</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="flow-card">
+        <svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma du flux d'énergie solaire : soleil, panneau photovoltaïque, onduleur, batterie et maison">
+          <!-- Sun -->
+          <g class="sun-ray">
+            <g stroke="#F0A93B" stroke-width="3" stroke-linecap="round">
+              <line x1="78" y1="10" x2="78" y2="26"/>
+              <line x1="78" y1="118" x2="78" y2="134"/>
+              <line x1="22" y1="66" x2="38" y2="66"/>
+              <line x1="118" y1="66" x2="134" y2="66"/>
+              <line x1="40" y1="28" x2="51" y2="39"/>
+              <line x1="105" y1="93" x2="116" y2="104"/>
+              <line x1="116" y1="28" x2="105" y2="39"/>
+              <line x1="51" y1="93" x2="40" y2="104"/>
+            </g>
+          </g>
+          <circle cx="78" cy="66" r="30" fill="#F0A93B"/>
+          <circle cx="78" cy="66" r="30" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="1"/>
+
+          <!-- PV Panel -->
+          <g transform="translate(168,32)">
+            <rect x="0" y="0" width="120" height="76" rx="8" fill="#173F2A" stroke="#7CB342" stroke-width="2"/>
+            <g stroke="#7CB342" stroke-width="1.4" opacity=".85">
+              <line x1="0" y1="19" x2="120" y2="19"/>
+              <line x1="0" y1="38" x2="120" y2="38"/>
+              <line x1="0" y1="57" x2="120" y2="57"/>
+              <line x1="30" y1="0" x2="30" y2="76"/>
+              <line x1="60" y1="0" x2="60" y2="76"/>
+              <line x1="90" y1="0" x2="90" y2="76"/>
+            </g>
+          </g>
+          <!-- sunlight to panel -->
+          <line x1="104" y1="50" x2="168" y2="45" stroke="#F0A93B" stroke-width="2" stroke-dasharray="4 6" opacity=".8"/>
+
+          <!-- vertical dashed line panel -> inverter -->
+          <line x1="228" y1="108" x2="228" y2="176" stroke="#7CB342" stroke-width="2.5" class="dash-flow"/>
+          <circle cx="228" cy="142" r="4" fill="#A8D179" class="pulse-dot"/>
+
+          <!-- Inverter box -->
+          <g transform="translate(168,176)">
+            <rect x="0" y="0" width="120" height="86" rx="12" fill="#0F3324" stroke="#F0A93B" stroke-width="2"/>
+            <text x="60" y="24" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#F0A93B" letter-spacing="1">ONDULEUR</text>
+            <path d="M64 34 L48 58 L60 58 L54 76 L76 50 L63 50 Z" fill="#E05A25"/>
+          </g>
+
+          <!-- lines to battery and house -->
+          <path d="M188 262 C 150 300, 120 300, 92 320" fill="none" stroke="#7CB342" stroke-width="2.5" class="dash-flow"/>
+          <path d="M268 262 C 306 300, 336 300, 366 320" fill="none" stroke="#7CB342" stroke-width="2.5" class="dash-flow"/>
+          <circle cx="140" cy="298" r="4" fill="#A8D179" class="pulse-dot"/>
+          <circle cx="318" cy="298" r="4" fill="#A8D179" class="pulse-dot"/>
+
+          <!-- Battery -->
+          <g transform="translate(30,320)">
+            <rect x="0" y="0" width="112" height="56" rx="10" fill="#173F2A" stroke="#7CB342" stroke-width="2"/>
+            <rect x="112" y="18" width="8" height="20" rx="2" fill="#7CB342"/>
+            <rect x="14" y="14" width="22" height="28" rx="2" fill="#7CB342" opacity=".85"/>
+            <rect x="42" y="14" width="22" height="28" rx="2" fill="#7CB342" opacity=".55"/>
+            <rect x="70" y="14" width="22" height="28" rx="2" fill="#7CB342" opacity=".3"/>
+            <text x="56" y="-8" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#A8D179" letter-spacing="1">BATTERIE</text>
+          </g>
+
+          <!-- House -->
+          <g transform="translate(330,300)">
+            <path d="M0 40 L50 0 L100 40 L100 90 L0 90 Z" fill="#173F2A" stroke="#F0A93B" stroke-width="2"/>
+            <rect x="40" y="55" width="20" height="35" fill="#F0A93B"/>
+            <rect x="12" y="50" width="18" height="18" fill="#7CB342" opacity=".7"/>
+            <rect x="70" y="50" width="18" height="18" fill="#7CB342" opacity=".7"/>
+            <text x="50" y="-8" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#A8D179" letter-spacing="1">FOYER</text>
+          </g>
+        </svg>
+        <div class="flow-caption">
+          <span>Soleil → Panneau</span><span>Onduleur</span><span>Batterie / Foyer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="strip-track">
+    <span><span>●</span>Onduleurs hybrides</span>
+    <span><span>●</span>Off-grid &amp; On-grid</span>
+    <span><span>●</span>Batteries LiFePO4</span>
+    <span><span>●</span>Systèmes tout-en-un</span>
+    <span><span>●</span>Éclairage solaire</span>
+    <span><span>●</span>Certifié CE</span>
+    <span><span>●</span>Onduleurs hybrides</span>
+    <span><span>●</span>Off-grid &amp; On-grid</span>
+    <span><span>●</span>Batteries LiFePO4</span>
+    <span><span>●</span>Systèmes tout-en-un</span>
+    <span><span>●</span>Éclairage solaire</span>
+    <span><span>●</span>Certifié CE</span>
+  </div>
+</div>
+
+<!-- ================= CATEGORIES ================= -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Notre gamme</p>
+      <h2>Une solution pour chaque installation</h2>
+      <p>De la maison individuelle à l'installation industrielle, sept familles de produits pour produire, convertir, stocker et distribuer l'énergie solaire.</p>
+    </div>
+
+    <div class="cat-grid">
+      <div class="cat-card reveal">
+        <div class="cat-img"><span class="cat-tag">Off-grid / On-grid</span><img src="offgrid-inverter.jpg" alt="Onduleur solaire hors-réseau HAIGOUN"></div>
+        <div class="cat-body">
+          <h3>Onduleurs hors-réseau</h3>
+          <p>Séries ED &amp; MZ/MS — de 1,2 à 12 kW, avec ou sans batterie, protection complète intégrée.</p>
+          <div class="cat-specs"><span class="pill">1,2 – 12 kW</span><span class="pill">12 / 24 / 48 V</span></div>
+          <a href="catalogue.html#offgrid" class="cat-link">Voir la gamme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="cat-card reveal">
+        <div class="cat-img"><span class="cat-tag">Hybride</span><img src="hybrid-inverter.jpg" alt="Onduleur solaire hybride HAIGOUN"></div>
+        <div class="cat-body">
+          <h3>Onduleurs hybrides</h3>
+          <p>Séries QD, ME &amp; AT — gestion intelligente PV / batterie / réseau, jusqu'à 20 kW triphasé.</p>
+          <div class="cat-specs"><span class="pill">2 – 20 kW</span><span class="pill">Parallèle x6</span></div>
+          <a href="catalogue.html#hybride" class="cat-link">Voir la gamme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="cat-card reveal">
+        <div class="cat-img icon-media" style="background:linear-gradient(160deg,#eef3e6,#f7f2e2);display:flex;align-items:center;justify-content:center;"><span class="cat-tag" style="position:absolute;top:14px;left:14px;">On-grid</span>
+          <svg viewBox="0 0 64 64" width="72" height="72" fill="none" stroke="#1B5A3B" stroke-width="2"><rect x="8" y="8" width="48" height="30" rx="3"/><line x1="8" y1="18" x2="56" y2="18"/><line x1="8" y1="28" x2="56" y2="28"/><line x1="24" y1="8" x2="24" y2="38"/><line x1="40" y1="8" x2="40" y2="38"/><path d="M32 42v8M20 58h24l-4-8H24z"/></svg>
+        </div>
+        <div class="cat-body">
+          <h3>Onduleurs réseau (On-Grid)</h3>
+          <p>Séries YG &amp; AT-TLC — injection réseau haute efficacité, du résidentiel (3,6 kW) à l'industriel (120 kW).</p>
+          <div class="cat-specs"><span class="pill">3,6 – 120 kW</span><span class="pill">Efficacité 99%</span></div>
+          <a href="catalogue.html#ongrid" class="cat-link">Voir la gamme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="cat-card reveal">
+        <div class="cat-img"><span class="cat-tag">Stockage</span><img src="storage-install-2.jpg" alt="Batterie de stockage solaire LiFePO4"></div>
+        <div class="cat-body">
+          <h3>Batteries de stockage</h3>
+          <p>LiFePO4 murales ou sur pied, de 5 à 16 kWh, 6000 à 8000 cycles, compatibles multi-marques.</p>
+          <div class="cat-specs"><span class="pill">5 – 16 kWh</span><span class="pill">51,2 V</span></div>
+          <a href="catalogue.html#batteries" class="cat-link">Voir la gamme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="cat-card reveal">
+        <div class="cat-img"><span class="cat-tag">Tout-en-un</span><img src="storage-install.jpg" alt="Système de stockage solaire tout-en-un empilable"></div>
+        <div class="cat-body">
+          <h3>Systèmes tout-en-un</h3>
+          <p>Onduleur + batterie intégrés, du nomade 500 Wh au conteneur empilable 32 kWh triphasé.</p>
+          <div class="cat-specs"><span class="pill">0,5 – 32 kWh</span><span class="pill">Backup auto</span></div>
+          <a href="catalogue.html#allinone" class="cat-link">Voir la gamme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="cat-card reveal">
+        <div class="cat-img"><span class="cat-tag">Éclairage</span><img src="streetlight.jpg" alt="Lampadaire solaire LED HAIGOUN"></div>
+        <div class="cat-body">
+          <h3>Éclairage solaire</h3>
+          <p>Lampadaires LED autonomes tout-en-un, panneau intégré, détection de mouvement, IP66/67.</p>
+          <div class="cat-specs"><span class="pill">30 – 120 W</span><span class="pill">Autonomie 3 nuits</span></div>
+          <a href="catalogue.html#eclairage" class="cat-link">Voir la gamme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section class="section-pad" style="background:var(--paper);">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Pourquoi HAIGOUN</p>
+      <h2>Une expertise technique, pensée pour le terrain algérien</h2>
+    </div>
+    <div class="feat-grid">
+      <div class="feat-card reveal">
+        <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <h4>Haut rendement MPPT</h4>
+        <p>Jusqu'à 99,9% de rendement de suivi MPPT sur l'ensemble de la gamme d'onduleurs.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-4z"/></svg></div>
+        <h4>Protections complètes</h4>
+        <p>Court-circuit, surtension, inversion de polarité, anti-îlotage : sécurité intégrée sur chaque appareil.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <h4>Fonctionnement 24/7</h4>
+        <p>Bascule automatique solaire / batterie / réseau, sans coupure, avec mode sans batterie disponible.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5v14"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h4>Suivi &amp; pilotage à distance</h4>
+        <p>Supervision Wi-Fi / 4G, application mobile et écran LCD pour un pilotage simple au quotidien.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Démarche</p>
+      <h2>De la demande à la mise en service</h2>
+    </div>
+    <div class="process reveal">
+      <div class="process-step">
+        <span class="process-num">Étape 1</span>
+        <h4>Étude de vos besoins</h4>
+        <p>Analyse de votre consommation, du site et de vos objectifs (autoconsommation, secours, site isolé).</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">Étape 2</span>
+        <h4>Dimensionnement &amp; devis</h4>
+        <p>Sélection des onduleurs, batteries et panneaux adaptés, avec devis détaillé sous 7 jours.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">Étape 3</span>
+        <h4>Fourniture &amp; installation</h4>
+        <p>Livraison depuis notre unité de production de Djelfa, installation par nos équipes ou partenaires.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">Étape 4</span>
+        <h4>Suivi &amp; maintenance</h4>
+        <p>Mise en service, formation à l'usage et accompagnement après-vente sur la durée.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<section class="section-pad" style="padding-top:0;">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h3>Un projet solaire à Djelfa ou ailleurs en Algérie ?</h3>
+        <p>Recevez une proposition technique et un devis sous 7 jours ouvrés.</p>
+      </div>
+      <a href="contact.html" class="btn" style="background:#fff;color:var(--ember-dark);">Demander un devis</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="logo-icon.png" alt="HAIGOUN"><strong>HAIGOUN</strong></div>
+        <p style="font-size:14px;color:rgba(255,255,255,0.72);max-width:280px;">Énergie et énergies renouvelables — conception, production et distribution de solutions solaires en Algérie.</p>
+        <p style="font-size:13.5px;color:rgba(255,255,255,0.78);max-width:280px;margin:0;">
+          <strong style="color:#fff;">Haigoune Khalil</strong> — Gérant<br>
+          <a href="tel:+213658403866" style="color:rgba(255,255,255,0.78);">+213 658 40 38 66</a><br>
+          <a href="mailto:khalilone31@gmail.com" style="color:rgba(255,255,255,0.78);">khalilone31@gmail.com</a>
+        </p>
+      </div>
+      <div>
+        <h5>Navigation</h5>
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h5>Produits</h5>
+        <a href="catalogue.html#hybride">Onduleurs hybrides</a>
+        <a href="catalogue.html#batteries">Batteries LiFePO4</a>
+        <a href="catalogue.html#allinone">Tout-en-un</a>
+        <a href="catalogue.html#eclairage">Éclairage solaire</a>
+      </div>
+      <div>
+        <h5>Nos sites</h5>
+        <div class="footer-addr"><strong>Siège social</strong>Carrefour Bab El Charef, Immeuble Agence Zemzem, 3ème étage, N°4 — Djelfa</div>
+        <div class="footer-addr"><strong>Unité de production</strong>Local 23, Cité El Malaab, Commune El Charef, W. Djelfa</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="year-now">2026</span> HAIGOUN — Énergie et Énergies Renouvelables. Tous droits réservés.</span>
+      <span>Djelfa, Algérie</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
