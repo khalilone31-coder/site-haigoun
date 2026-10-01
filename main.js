@@ -70,4 +70,34 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.year-now').forEach(function (el) {
     el.textContent = new Date().getFullYear();
   });
-});
+});// ===== Lightbox photo agrandie =====
+(function() {
+  var overlay = document.createElement('div');
+  overlay.className = 'lightbox-overlay';
+  overlay.innerHTML = '<span class="lightbox-close">&times;</span><img src="" alt="Photo agrandie">';
+  document.body.appendChild(overlay);
+  var overlayImg = overlay.querySelector('img');
+
+  function openLightbox(src, alt) {
+    overlayImg.src = src;
+    overlayImg.alt = alt || '';
+    overlay.classList.add('active');
+  }
+  function closeLightbox() {
+    overlay.classList.remove('active');
+    overlayImg.src = '';
+  }
+
+  document.addEventListener('click', function(e) {
+    var img = e.target.closest('.prod-media img, .cat-img img, .about-grid img');
+    if (img) {
+      openLightbox(img.src, img.alt);
+    } else if (e.target === overlay || e.target.classList.contains('lightbox-close')) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+})();
